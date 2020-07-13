@@ -4,12 +4,18 @@ import { Texr, View } from 'react-native';
 
 export default function App() {
     return (
-      <View style={{padding: 50, flexDirection="row"}}>
+      <View 
+        style={{
+            padding: 50, 
+            flexDirection='row', 
+            width: '80%', 
+            height: 300, 
+            justifyContent: 'space-around', 
+            alignItems: 'stretch' }}>
         <View 
             style={{
                 backgroundColor: 'red', 
-                width: 100,
-                height: 100,
+                flex: 1,
                 justifyContent: 'center', 
                 alignItems: 'center'
             }}>
@@ -17,9 +23,8 @@ export default function App() {
         </View>
         <View
             style={{
-                backgroundColor: 'blue', 
-                width: 100,
-                height: 100,
+                backgroundColor: 'blue',
+                flex: 2, 
                 justifyContent: 'center', 
                 alignItems: 'center'
             }}>
@@ -28,8 +33,6 @@ export default function App() {
         <View
             style={{
                 backgroundColor: 'green', 
-                width: 100,
-                height: 100,
                 justifyContent: 'center', 
                 alignItems: 'center'
             }}>
